@@ -62,8 +62,8 @@ export function Studies ({ query }) {
   const pageRows = sorted.slice((page - 1) * pageSize, page * pageSize)
 
   return (
-    <div className='flex flex-col rounded-2xl border'>
-      <div className='flex items-center justify-between p-3'>
+    <div className='flex flex-col rounded-2xl border' style={{ height: '100%', overflow: 'hidden' }}>
+      <div className='flex items-center justify-between p-3' style={{ flexShrink: 0 }}>
         <div className='card__title'>Studies</div>
         <div className='text-sm text-gray-500'>
            {/* {query ? `Query: ${query}` : 'Query: (empty)'} */}
@@ -86,7 +86,7 @@ export function Studies ({ query }) {
       )}
 
       {query && !loading && !err && (
-        <div className='overflow-auto'>
+        <div className='studies-wrapper' style={{ flex: 1, minHeight: 0 }}>
           <table className='min-w-full text-sm'>
             <thead className='sticky top-0 bg-gray-50 text-left'>
               <tr>
@@ -124,7 +124,7 @@ export function Studies ({ query }) {
       )}
 
       {query && !loading && !err && (
-        <div className='flex items-center justify-between border-t p-3 text-sm'>
+        <div className='flex items-center justify-between border-t p-3 text-sm' style={{ flexShrink: 0 }}>
           <div>Total <b>{sorted.length}</b> records, page <b>{page}</b>/<b>{totalPages}</b></div>
           <div className='flex items-center gap-2'>
             <button disabled={page <= 1} onClick={() => setPage(1)} className='rounded-lg border px-2 py-1 disabled:opacity-40'>⏮</button>
