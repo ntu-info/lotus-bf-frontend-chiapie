@@ -84,6 +84,11 @@ export default function App () {
           <NiiViewer query={query} />
         </section>
       </main>
+
+      {/* Jumping Frogs 🐸 */}
+      <div className="frog frog-1">🐸</div>
+      <div className="frog frog-2">🐸</div>
+      <div className="frog frog-3">🐸</div>
     </div>
   )
 }
