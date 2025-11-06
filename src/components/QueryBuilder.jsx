@@ -9,7 +9,7 @@ export function QueryBuilder({ query, setQuery }) {
   };
 
   return (
-    <div className="flex flex-col gap-3 qb">
+    <div className="flex flex-col gap-3 qb" style={{ flexShrink: 0 }}>
       {/* Header */}
       <div className="flex items-center">
         <div className="card__title">Query Builder</div>

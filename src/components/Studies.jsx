@@ -62,7 +62,7 @@ export function Studies ({ query }) {
   const pageRows = sorted.slice((page - 1) * pageSize, page * pageSize)
 
   return (
-    <div className='flex flex-col rounded-2xl border' style={{ height: '100%', overflow: 'hidden' }}>
+    <div className='flex flex-col rounded-2xl border' style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
       <div className='flex items-center justify-between p-3' style={{ flexShrink: 0 }}>
         <div className='card__title'>Studies</div>
         <div className='text-sm text-gray-500'>
