@@ -173,7 +173,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .card--stack > .divider {
@@ -530,6 +531,18 @@ tbody td {
   animation: jump-3 4s ease-in-out infinite 1s;
 }
 
+.frog-4 {
+  bottom: 20px;
+  left: 25%;
+  animation: jump-4 3.2s ease-in-out infinite 0.8s;
+}
+
+.frog-5 {
+  bottom: 20px;
+  right: 25%;
+  animation: jump-5 3.8s ease-in-out infinite 1.5s;
+}
+
 @keyframes jump-1 {
   0%, 100% {
     transform: translateY(0) rotate(0deg);
@@ -575,6 +588,106 @@ tbody td {
   }
 }
 
+@keyframes jump-4 {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  20% {
+    transform: translateY(-70px) translateX(-20px) rotate(-12deg);
+  }
+  50% {
+    transform: translateY(-110px) translateX(-40px) rotate(8deg);
+  }
+  75% {
+    transform: translateY(-60px) translateX(-25px) rotate(-8deg);
+  }
+}
+
+@keyframes jump-5 {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg) scaleX(-1);
+  }
+  25% {
+    transform: translateY(-85px) translateX(25px) rotate(15deg) scaleX(-1);
+  }
+  55% {
+    transform: translateY(-130px) translateX(50px) rotate(-10deg) scaleX(-1);
+  }
+  80% {
+    transform: translateY(-70px) translateX(30px) rotate(12deg) scaleX(-1);
+  }
+}
+
+/* Floating Lotus 🪷 */
+.lotus {
+  position: fixed;
+  font-size: 28px;
+  z-index: 9998;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.8;
+}
+
+.lotus-1 {
+  top: 15%;
+  left: 3%;
+  animation: float-lotus-1 6s ease-in-out infinite;
+}
+
+.lotus-2 {
+  top: 20%;
+  right: 5%;
+  animation: float-lotus-2 7s ease-in-out infinite 1s;
+}
+
+.lotus-3 {
+  top: 60%;
+  left: 2%;
+  animation: float-lotus-3 8s ease-in-out infinite 2s;
+}
+
+.lotus-4 {
+  top: 70%;
+  right: 3%;
+  animation: float-lotus-4 6.5s ease-in-out infinite 1.5s;
+}
+
+@keyframes float-lotus-1 {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
+
+@keyframes float-lotus-2 {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(-12deg);
+  }
+}
+
+@keyframes float-lotus-3 {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-18px) rotate(8deg) scale(1.1);
+  }
+}
+
+@keyframes float-lotus-4 {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-22px) rotate(-10deg) scale(1.05);
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 1023px) {
   .app {
@@ -600,5 +713,14 @@ tbody td {
     font-size: 24px;
     width: 30px;
     height: 30px;
+  }
+  .lotus {
+    font-size: 20px;
+  }
+  .frog-4, .frog-5 {
+    display: none; /* Hide extra frogs on mobile */
+  }
+  .lotus-3, .lotus-4 {
+    display: none; /* Hide some lotus on mobile */
   }
 }

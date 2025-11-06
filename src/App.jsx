@@ -85,10 +85,18 @@ export default function App () {
         </section>
       </main>
 
-      {/* Jumping Frogs 🐸 */}
+      {/* Jumping Frogs & Floating Lotus 🐸🪷 */}
       <div className="frog frog-1">🐸</div>
       <div className="frog frog-2">🐸</div>
       <div className="frog frog-3">🐸</div>
+      <div className="frog frog-4">🐸</div>
+      <div className="frog frog-5">🐸</div>
+
+      {/* Floating Lotus */}
+      <div className="lotus lotus-1">🪷</div>
+      <div className="lotus lotus-2">🪷</div>
+      <div className="lotus lotus-3">🪷</div>
+      <div className="lotus lotus-4">🪷</div>
     </div>
   )
 }
