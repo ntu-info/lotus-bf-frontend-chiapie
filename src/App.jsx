@@ -59,7 +59,7 @@ export default function App () {
   return (
     <div className="app">
       <header className="app__header">
-        <h1 className="app__title">LoTUS-BF</h1>
+        <h1 className="app__title">🪷 LoTUS-BF</h1>
         <div className="app__subtitle">Location-or-Term Unified Search for Brain Functions</div>
       </header>
 

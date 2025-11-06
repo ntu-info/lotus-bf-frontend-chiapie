@@ -172,8 +172,8 @@ body {
 .card--stack {
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
-  max-height: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .card--stack > .divider {
