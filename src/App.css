@@ -167,6 +167,7 @@ body {
   margin-bottom: 16px;
   color: var(--fg);
   letter-spacing: -0.3px;
+  text-align: center;
 }
 
 .card--stack {
@@ -429,7 +430,7 @@ thead th {
   text-align: left;
   font-weight: 600;
   font-size: 13px;
-  color: #fff;
+  color: #000;
   border-bottom: 2px solid var(--border);
   cursor: pointer;
   transition: all 0.2s ease;
