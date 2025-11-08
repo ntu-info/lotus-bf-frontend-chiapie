@@ -51,10 +51,15 @@
   overflow: hidden !important;
 }
 
+/* Center align card titles */
+.card__title {
+  text-align: center !important;
+}
+
 /* Make Studies table header solid pink for readability */
 thead th {
   background: #F5BABB !important;
-  color: #fff !important;
+  color: #000 !important;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
