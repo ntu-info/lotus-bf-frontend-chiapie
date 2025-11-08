@@ -422,12 +422,14 @@ thead {
 }
 
 thead th {
-  background: rgba(245, 186, 187, 0.12);
+  background: #F5BABB;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   padding: 14px 16px;
   text-align: left;
   font-weight: 600;
   font-size: 13px;
-  color: var(--fg);
+  color: #fff;
   border-bottom: 2px solid var(--border);
   cursor: pointer;
   transition: all 0.2s ease;
@@ -519,28 +521,11 @@ tbody td {
   animation: jump-1 3s ease-in-out infinite;
 }
 
-.frog-2 {
-  bottom: 20px;
-  right: 8%;
-  animation: jump-2 3.5s ease-in-out infinite 0.5s;
-}
-
-.frog-3 {
-  bottom: 20px;
-  left: 50%;
-  animation: jump-3 4s ease-in-out infinite 1s;
-}
-
-.frog-4 {
-  bottom: 20px;
-  left: 30%;
-  animation: jump-4 3.2s ease-in-out infinite 0.8s;
-}
-
+.frog-2,
+.frog-3,
+.frog-4,
 .frog-5 {
-  bottom: 20px;
-  right: 30%;
-  animation: jump-5 3.8s ease-in-out infinite 1.5s;
+  display: none;
 }
 
 @keyframes jump-1 {
