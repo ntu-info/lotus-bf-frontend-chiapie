@@ -51,15 +51,16 @@
   overflow: hidden !important;
 }
 
-/* Center align card titles */
+/* Left align card titles (Terms, Query Builder, Studies, NIfTI Viewer) */
 .card__title {
-  text-align: center !important;
+  text-align: left !important;
 }
 
-/* Make Studies table header solid pink for readability */
+/* Make Studies table header solid pink with centered text */
 thead th {
   background: #F5BABB !important;
   color: #000 !important;
+  text-align: center !important;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
